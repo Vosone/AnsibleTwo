@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Adnan Hodzic
+  description: Install and setup Docker and Docker Compose on any version of Debian and Ubuntu Linux system.
+
+  license: GPLv3
+
+  min_ansible_version: 2.0
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+
+  galaxy_tags:
+  - development
+  - system
+  - docker
+  - compose
+  - ubuntu
+  - debian
