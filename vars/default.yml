@@ -1,0 +1,5 @@
+---
+mysql_root_password: "Schubidubidu12"
+http_host: "10.0.0.123"
+http_conf: "vosome.conf"
+http_port: "80"
