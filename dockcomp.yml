@@ -4,4 +4,4 @@
   become: yes
 
   roles:
-    - adnanHodzic.docker-compose
+    -docker
