@@ -4,5 +4,4 @@
   become: yes
 
   roles:
-    - { role: adnanHodzic.docker-compose }
-
+    - adnanHodzic.docker-compose
