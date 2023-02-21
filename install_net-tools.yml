@@ -1,0 +1,35 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install net-tools package
+    apt:
+      name: net-tools
+      state: latest
+  
+  - name: copy default files
+    copy: 
+      src:  default_site.html
+      dest: /var/log
+      owner: root
+      group: root
+      mode: 0644t
+
+  - name: install unzip
+    package:
+      name: unzip
+
+  - name: install terraform
+    unarchive:
+      src: https://releases.hashicorp.com/terraform/1.3.9/terraform_1.3.9_linux_amd64.zip
+      dest: /usr/local/bin
+      remote_src: yes
+      mode: 0755
+      owner: root
+      group: root
+
+  - name : update repository index
+    apt:
+      update_cache: yes
